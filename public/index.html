@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Friday Group Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-left">
+                <button class="back-button">←</button>
+                <div class="group-avatar">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Group">
+                </div>
+                <div class="group-info">
+                    <h2>Fun Friday Group</h2>
+                    <span class="group-status">Online</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="menu-button">⋮</button>
+            </div>
+        </div>
+
+        <div class="messages-container" id="messagesContainer">
+        </div>
+
+        <div class="anonymous-status" id="anonymousStatus">
+            <span>👤 Now you're appearing as Anonymous! 👤</span>
+        </div>
+
+        <div class="message-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="Type a message ..." maxlength="500">
+                <button class="attachment-button">📎</button>
+                <button class="camera-button">📷</button>
+            </div>
+            <button class="send-button" id="sendButton">▶</button>
+        </div>
+
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <h3>Enter Your Name</h3>
+                <input type="text" id="usernameInput" placeholder="Your name" maxlength="50">
+                <div class="modal-buttons">
+                    <button id="anonymousBtn">Continue as Anonymous</button>
+                    <button id="setUsernameBtn">Set Username</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
