@@ -172,21 +172,21 @@ setTimeout(() => {
         const sampleMessages = [
             {
                 username: 'Anonymous',
-                message: 'Someone order Bornvital!!',
+                message: 'Is anyone there!!',
                 is_anonymous: true,
                 created_at: new Date(Date.now() - 3600000),
                 sender_id: 'sample1'
             },
             {
                 username: 'Anonymous',
-                message: 'hahahahah!!',
+                message: 'Yeah yeah!!',
                 is_anonymous: true,
                 created_at: new Date(Date.now() - 3000000),
                 sender_id: 'sample2'
             },
             {
                 username: 'Abhay Shukla',
-                message: 'We have Surprise For you!!',
+                message: 'There is a suprise Guys!!',
                 is_anonymous: false,
                 created_at: new Date(Date.now() - 1800000),
                 sender_id: 'sample3'
